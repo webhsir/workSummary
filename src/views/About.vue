@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <layout></layout>
   </div>
 </template>
+
+<script>
+import layout from "../components/layout";
+export default {
+  components: { layout },
+  data() {
+    return {};
+  }
+};
+</script>
+
+<style scoped lang="scss"></style>

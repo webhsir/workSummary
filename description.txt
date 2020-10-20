@@ -1,0 +1,11 @@
+one--use mock.js in vue
+        step1: npm install mockjs --save-dev
+        step2: add mock.js document in project
+        step3: import mock/index.js in main.js
+        step4: send request in page
+
+
+two--use axios in vue
+        step1: npm install axios --save-dev
+
+openSourceApi:
