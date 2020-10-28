@@ -4,16 +4,26 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import index from "../views/index.vue";
 import second from "../views/second.vue";
-
+import indexPage from "../views/website/index.vue";
+import tsc from "../views/kinds/tsc.vue";
 import pageERR from "../views/404.vue";
-
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "indexPage",
+    component: indexPage
+  },
+  // {
+  //   path: "/",
+  //   name: "Home",
+  //   component: Home
+  // },
+  {
+    path: "/tsc",
+    name: "tsc",
+    component: tsc
   },
   {
     path: "/About",

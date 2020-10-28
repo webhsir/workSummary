@@ -1,46 +1,9 @@
 <template>
   <div id="app">
-    <router-view v-if="loadingFlag"></router-view>
-    <canvascomp v-else></canvascomp>
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import canvascomp from "./components/canvas";
-export default {
-  components: {
-    canvascomp
-  },
-  data() {
-    return {
-      loadingFlag: false
-    };
-  },
-  mounted() {
-    this.changeFlag();
-  },
-  methods: {
-    changeFlag() {
-      let _this = this;
-      setTimeout(() => {
-        this.loadingFlag = true;
-      }, 3500);
-    }
-  }
-};
-</script>
-
 <style lang="less">
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#app {
-  height: 100%;
-}
-
 @font-face {
   font-family: "iconfont"; /* project id 2109149 */
   src: url("//at.alicdn.com/t/font_2109149_xl2y384p6z.eot");
